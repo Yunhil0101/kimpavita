@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Santé Rénale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cadre principal du quiz -->
+    <div id="quiz-container">
+        
+        <!-- Page d'accueil -->
+        <div id="welcome-screen" class="quiz-box">
+            <h2>Bienvenue sur notre test de santé rénale !</h2>
+            <p>Ce test rapide vous permettra d'évaluer l'état de votre santé rénale en répondant à quelques questions simples.</p>
+            <button onclick="showNB()">Commencer</button>
+        </div>
+
+        <!-- Message NB avant de commencer -->
+        <div id="nb-message" class="quiz-box" style="display:none;">
+            <p><strong>NB :</strong> Ce test ne remplace pas un bilan rénal complet (par ex., analyses d'urée, créatinine) nécessaire pour confirmer l'état de santé de vos reins.</p>
+            <button onclick="demarrerQuiz()">Démarrer le quiz</button>
+        </div>
+
+        <!-- Cadre de question du quiz -->
+        <div id="question-box" class="quiz-box" style="display:none;">
+            <p id="question"></p>
+            <div id="buttons">
+                <button onclick="answer('oui')">Oui</button>
+                <button onclick="answer('non')">Non</button>
+            </div>
+        </div>
+
+        <!-- Cadre de résultat -->
+        <div id="result" class="quiz-box" style="display:none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

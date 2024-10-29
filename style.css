@@ -1,0 +1,201 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+/* Conteneur principal (quiz-container) */
+#quiz-container {
+    background-image: url('reg.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 40px; /* Ajout de padding pour plus d'espace autour du contenu */
+    border-radius: 15px;
+    max-width: 800px; /* Augmenter la largeur maximale */
+    min-height: 600px; /* Ajouter une hauteur minimale */
+    margin: 40px auto; /* Plus d'espace en haut et en bas */
+    text-align: center;
+}
+
+
+/* Image de fond pour la page d'accueil */
+#quiz-container {
+    background-image: url('reg.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Page d'accueil */
+#welcome-screen {
+    background-color: rgba(75, 0, 130, 0.8); /* Couleur plus douce */
+    color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+#welcome-screen h2 {
+    font-size: 24px;
+}
+
+#welcome-screen p {
+    font-size: 18px;
+}
+
+#welcome-screen button {
+    background-color: #FF8C00;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Message NB */
+#nb-message {
+    background-color: rgba(224, 255, 224, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#nb-message button {
+    background-color: #FF8C00;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Quiz */
+#question-box {
+    background-color: #F0F0F5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#question-box p {
+    font-size: 20px;
+    color: #4B0082;
+}
+
+#buttons button {
+    background-color: #6A5ACD; /* Couleur adoucie */
+    color: #FFF;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#buttons button:nth-child(2) {
+    background-color: #FF8C00;
+}
+
+/* Résultats */
+#result {
+    background-color: #6A5ACD;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Conteneur principal centré pour la page feedback */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Titre de la page feedback */
+.container h1 {
+    font-size: 24px;
+    color: #4B0082;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les labels du formulaire */
+#feedback-form label {
+    font-size: 16px;
+    color: #4B0082;
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Styles pour les champs de saisie */
+#feedback-form input,
+#feedback-form select,
+#feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Styles pour le bouton de soumission */
+#feedback-form button {
+    background-color: #FF8C00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#feedback-form button:hover {
+    background-color: #FFA500;
+}
+
+/* Style mobile */
+@media (max-width: 768px) {
+    #quiz-container {
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    #welcome-screen, #nb-message, #question-box, #result {
+        padding: 15px;
+    }
+    
+    #welcome-screen h2 {
+        font-size: 20px;
+    }
+    
+    #welcome-screen p, #question-box p {
+        font-size: 16px;
+    }
+    
+    #welcome-screen button, #nb-message button, #buttons button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    
+    #feedback-form label, #feedback-form input, #feedback-form select, #feedback-form textarea {
+        font-size: 14px;
+    }
+}
