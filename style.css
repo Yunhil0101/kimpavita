@@ -20,20 +20,6 @@ body {
     text-align: center;
 }
 
-
-/* Image de fond pour la page d'accueil */
-#quiz-container {
-    background-image: url('reg.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: center;
-}
-
 /* Page d'accueil */
 #welcome-screen {
     background-color: rgba(75, 0, 130, 0.8); /* Couleur plus douce */
@@ -41,8 +27,6 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
-
-
 
 #welcome-screen h2 {
     font-size: 24px;
@@ -85,6 +69,12 @@ body {
     background-color: #F0F0F5;
     padding: 20px;
     border-radius: 10px;
+    transition: opacity 1s ease; /* Transition pour l'opacité */
+}
+
+#question-number {
+    font-size: 18px; /* Taille du texte pour le numéro de question */
+    color: #4B0082;
 }
 
 #question-box p {
@@ -198,4 +188,27 @@ body {
     #feedback-form label, #feedback-form input, #feedback-form select, #feedback-form textarea {
         font-size: 14px;
     }
+}
+
+.result-message {
+    background-color: rgba(71, 15, 224, 0.603); /* Couleur de fond blanche avec transparence */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.result-message h3 {
+    color: #d7cbe0; /* Couleur pour le titre */
+    margin-bottom: 10px;
+}
+
+.result-message ul {
+    list-style-type: none; /* Supprimer les puces */
+    padding: 0;
+}
+
+.result-message li {
+    font-size: 18px; /* Taille de police plus grande */
+    margin: 8px 0; /* Espacement entre les éléments de la liste */
 }
